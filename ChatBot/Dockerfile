@@ -8,7 +8,7 @@ COPY . /chatapp
 
 RUN pip install -r requirements.txt
 
-COPY .env /chatapp
+COPY /home/ubuntu/.env /chatapp
 
 ENV FLASK_APP=app.py
 
